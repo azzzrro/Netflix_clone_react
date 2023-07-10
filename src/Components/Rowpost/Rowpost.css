@@ -1,0 +1,119 @@
+.posters-row {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.posters-row h2 {
+    padding-left: 20px;
+}
+
+.posters {
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.posters::-webkit-scrollbar {
+    display: none;
+}
+
+
+.single_box_poster {
+    min-width: 400px;
+    width: 400px;
+    height: 225px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.single_small_box_poster {
+    min-width: 280px;
+    min-height: 150px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.single_small_box_poster img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    padding-right: 10px;
+
+}
+
+.single_box_poster img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    padding-right: 10px;
+
+}
+
+.single_box_poster:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.single_small_box_poster:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.single_box_poster:hover .poster_btn i {
+    visibility: visible;
+}
+
+.single_small_box_poster:hover .poster_btn i {
+    visibility: visible;
+}
+
+.single_box_poster:hover .poster_btn span {
+    visibility: visible;
+}
+
+.single_small_box_poster:hover .poster_btn span {
+    visibility: visible;
+}
+
+
+
+.poster_btn {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: end;
+    z-index: 1;
+    padding: 10px 17px 10px 10px;
+    opacity: 0.9;
+}
+
+.poster_btn i{
+    font-size: 12pt;
+    padding: 1.4px 5px 0 0;
+    visibility: hidden;
+}
+
+.poster_btn span{
+    font-size: 10pt;
+    /* padding: 1px; */
+    visibility: hidden;
+}
+
+/* =========== */
+.poster {
+    min-width: 350px;
+    width: 350px;
+    height: 200px;
+    border: 1px solid;
+    position: relative;
+}
+
+
+.poster,
+.small-poster {
+    transition: transform 0.4s ease;
+}
